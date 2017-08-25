@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.administrator.mydiary.MainActivity">
+    <item
+        android:id="@+id/db_save"
+        android:orderInCategory="100"
+        android:title="데이터 저장"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/db_load"
+        android:orderInCategory="101"
+        android:title="데이터 불러오기"/>
+</menu>

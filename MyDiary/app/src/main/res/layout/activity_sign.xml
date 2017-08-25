@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD">
+    
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:text="ID "
+        android:textColor="#444444"
+        android:textSize="10pt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_id"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/tv_id"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_id"
+        app:layout_constraintLeft_toRightOf="@+id/tv_id"
+        app:layout_constraintTop_toTopOf="@+id/tv_id"
+        app:layout_constraintVertical_bias="0.0"/>
+    
+    <TextView
+        android:id="@+id/tv_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="44dp"
+        android:text="PW "
+        android:textColor="#444444"
+        android:textSize="10pt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id"
+        />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tv_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="PW 확인"
+        android:textColor="#444444"
+        android:textSize="10pt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pw"/>
+    
+    <EditText
+        android:id="@+id/et_pwc"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_pw"
+        android:layout_below="@id/et_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/tv_pw"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/et_id"
+        app:layout_constraintRight_toLeftOf="@+id/tv_error"
+        app:layout_constraintTop_toBottomOf="@+id/et_pw"/>"
+    
+    <EditText
+        android:id="@+id/et_pw"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_pw"
+        android:layout_below="@id/et_id"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/tv_pw"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_id"/>
+    
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_login"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="#AA0000"
+        android:textSize="7pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/et_pw"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177"/>
+    
+    <Button
+        android:id="@+id/btn_idc"
+        android:layout_width="96dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="중복확인"
+        app:layout_constraintBottom_toBottomOf="@+id/et_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/et_id"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_id"
+        app:layout_constraintVertical_bias="0.615"
+        />
+    
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="완료"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.308"/>
+    
+    <TextView
+        android:id="@+id/tv_idc"
+        android:layout_width="147dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-6dp"
+        app:layout_constraintLeft_toLeftOf="@+id/et_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_id"/>
+</android.support.constraint.ConstraintLayout>
